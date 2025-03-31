@@ -1,0 +1,86 @@
+/* reseteo básico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    background-color: red;
+    transition: background-color 0.5s;
+}
+
+/*Estilo del encabezado*/
+.encabezado {
+    padding: 0.5rem 1rem;
+    background-color: white;
+}
+
+.encabezado__titulo {
+    font-weight: bold;
+    color:teal;
+    font-size: 1.5rem;
+    display: flex;
+    padding: 0.5rem 1rem;
+}
+
+/* Alineación de botones a la derecha */
+.color_flipper_titulo--simple{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    text-align: right;
+}
+
+.color__flipper_titulo--hex {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.encabezado__boton a:hover {
+    color: gray;
+}
+
+/* Sección de los cambio de los colores*/
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.cambiar-colores {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cambiar-colores-hexadecimal {
+    color: teal;
+}
+
+/*boton para cambiar los colores*/
+
+.boton__clickme {
+    margin-top: 2rem;
+    padding: 1rem 6rem;
+    border: 0.1rem solid;
+    background: red;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.cambiar-colores__boton:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
