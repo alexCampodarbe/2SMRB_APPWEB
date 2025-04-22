@@ -8,11 +8,11 @@ h1 {
     text-align: center;
 }
 
-p {
+/* p {
     text-align: center;
     font-size: 3rem;
     color: orangered;
-}
+} */
 
 #hola{
     color: blueviolet;
@@ -24,4 +24,8 @@ p {
 
 .pi{
     font-size: 4rem;
+}
+
+h2 + p{
+    color: red;
 }
