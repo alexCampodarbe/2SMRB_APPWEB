@@ -20,3 +20,32 @@ td {
     height: 2rem;
     text-align: center;
 }
+
+
+/* Apartir de aqui empieza el ejercicio de CSS */
+
+.amarillo{
+    background-color: rgba(255,240,0,0.4);
+}
+
+.verde{
+    background-color: rgba(45,132,0,0.4);
+}
+
+.azul{
+    background-color: rgba(0,61,255,0.4);
+}
+
+.rojo{
+    background-color: rgba(255,0,0,0.4);
+}
+
+.negro{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.centro{
+    background-image: url(./imagenes/pexels-grizzlybear-965879.jpg);
+    background-size: cover;
+    background-position: center;
+}
