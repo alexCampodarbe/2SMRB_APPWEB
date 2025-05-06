@@ -1,0 +1,10 @@
+/* ajustes de las clases */
+.titulo{
+    text-align: left;
+    text-size-adjust: 1rem;
+    padding: 3rem;
+}
+
+.lista_1{
+    text-align: right;
+}
