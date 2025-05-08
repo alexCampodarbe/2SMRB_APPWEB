@@ -1,5 +1,18 @@
-/* ajustes de las clases */
+/*Definir variables, que nos permitiran trabajar de manera paremetros*/
+:root{
+    --colorprimario: white;
+    --colorsecundario: rgba(236,236,236, 0.8);
+    --colorterciario: black;
+}
 
+/*PRIMORDIAL: Reseteo de etiquetas*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* etiquetas basicas */
 header{
     display: flex;
     justify-content: space-between;
@@ -7,37 +20,38 @@ header{
 
 }
 
-.titulo{
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240,240,240,0.5);
+}
+
+/* Clases basicas */
+
+.cabecero__titulo{
     text-align: left;
     text-size-adjust: 1rem;
     
 }
 /*  */
 
-.lista_1{
+.cabecero__navegador{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.ul{
+.cabecero__navegador__lista{
     display: flex;
     list-style: none;
 }
 
-li{
+.cabecero__navegador__lista__elemento{
     margin-left: 1rem;
 }
 
-.main_superior{
-    background-color: rgba(240,240,240,0.5);
-    text-align: center;
-    padding: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-#Sing_Up{
+.cabecero__navegador__boton{
     height: 2rem;
     margin-left: 1rem;
     background-color: white;
@@ -46,19 +60,22 @@ li{
     border-radius: 0.5rem;
 }
 
-#Start_free_trial{
+.principal__seccion1{
+    background-color: rgba(240,240,240,0.5);
+    text-align: center;
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.principal__seccion1__boton{
     background-color: black;
     color: white;
     padding: 1rem;
+    border-radius: 0.3rem;
 }
 
-.lorem_main_1{
-    width: 30%;
-    text-align:center;
-    padding-left: 35%;
-}
-
-.main_medio{
+.principal__seccion2{
     align-items: center;
     text-align: center;
     padding: 5%;
@@ -66,55 +83,37 @@ li{
     padding-bottom: 3%;
 }
 
-.lorem_main_2{
-    width: 60%;
-    padding-left: 20%;
-}
-
-.main_inferior{
+.principal__seccion2__imagenes{
+    padding: 5%;
     display: flex;
-    size-adjust: 100%;
-    
+    justify-content: center;
 }
 
-.img_1{
-    align-items: left;
-    margin-right: 5rem;
+.principal__seccion2__imagenes__figura{
+    padding: 5%;
+    size-adjust: 5rem;
+}
+
+.principal__seccion2__imagenes__figura__imagen{
+    width: 18rem;
+    height: 16rem;
+}
+
+.pie__lista{
+    list-style: none;
+}
+
+.pie__lista__titulo{
+    font-weight: bold;
+}
+
+.pie__seccion__listas{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin: 3rem;
+}
+
+.pie__seccion{
     display: flex;
-}
-
-.img_2{
-    align-items: center;
-    margin-right: 5rem;
-    display: flex;
-}
-
-.img_3{
-    align-items: right;
-    display: flex;
-}
-
-.fig{
-    display: flex;
-}
-
-.info_pag{
-    align-items: left;
-}
-
-.links_abajo{
-    align-items: right;
-    display: flex;
-}
-
-.links_abajo_2{
-    align-items: right;
-}
-
-.links_abajo_3{
-    align-items: right;
-}
-
-.links_abajo_4{
-    align-items: right;
 }

@@ -3,88 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wireframe</title>
+    <title>Trade</title>
     <link rel="stylesheet" href="./estilos_web.css">
 </head>
+<!-- Vamos a trabajar con la metodologia BEM - Trabajar por clases -->
 <body>
-    <header>
-        <h1 class="titulo">TRADE</h1>
-        <nav class="lista_1">
-            <ul class="ul">
-                <li class="li"><a href="">Link 1</a></li>
-                <li class="li"><a href="">Link 2</a></li>
-                <li class="li"><a href="">Link 3</a></li>
-                <li class="li"><a href="">Link 4</a></li>
+    <header class="cabecero">
+        <h1 class="cabecero__titulo">Trade</h1>
+        <nav class="cabecero__navegador">
+            <ul class="cabecero__navegador__lista">
+             <li class="cabecero__navegador__lista__elemento"><a href="">Link 1</a></li>
+             <li class="cabecero__navegador__lista__elemento"><a href="">Link 2</a></li> 
+             <li class="cabecero__navegador__lista__elemento"><a href="">Link 3</a></li>
+             <li class="cabecero__navegador__lista__elemento"><a href="">Link 4</a></li>
             </ul>
-            <button class="Sing_Up">Sing Up</button>
+            <button class="cabecero__navegador__boton">Sign up</button>
         </nav>
     </header>
-    <main>
-        <section class="main_superior">
-            <h2>Ready to get started?</h2>
-            <p class="lorem_main_1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur molestiae adipisci repellendus ex ad voluptatum assumenda impedit natus fugit porro!</p>
-            <button class="Start_free_trial">Start free trial</button>
+    <main class="principal">
+        <section class="principal__seccion1">
+            <h2 class="principal__seccion1__titulo">READY TO GET STARTED?</h2>
+            <p class="principal__seccion1__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam corporis quo nostrum nemo quisquam, corrupti ab dolores necessitatibus at quaerat tempora.</p>
+            <button class="principal__seccion1__boton">Start free trial</button>
         </section>
-        <section class="main_medio">
-            <h3>Your Best value Proposition</h3>
-            <p class="lorem_main_2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, iure quam! Doloremque esse sed magnam quasi est omnis accusantium facilis laborum tempora. Veritatis, sequi. Eligendi at ullam rem.</p>
-            <section class="main_inferior">
-                <figure>
-                    <img class="img_1" src="imagenes/simpsons.jpg" alt="imagen de los simpsons XBOX" width="300" height="300">
-                    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    <a class="img_1" href="">Learn more</a>
+        <section class="principal__seccion2">
+            <h3 class="principal__seccion2__titulo">Your best Value Proposition</h3>
+            <p class="principal__seccion2__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quisquam neque omnis illum nulla quod tenetur unde in dolorum ipsum, perferendis cupiditate voluptatibus sed.</p>
+            <section class="principal__seccion2__imagenes">
+                <figure class="principal__seccion2__imagenes__figura">
+                    <img class="principal__seccion2__imagenes__figura__imagen" src="./imagenes/imagen_batman.jpg" alt="">
+                    <figcaption class="principal__seccion2__imagenes__figura__captura">
+                        <p class="principal__seccion2__imagenes__figura__captura__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="principal__seccion2__imagenes__figura__captura__enlace"href="">Learn more</a>
+                    </figcaption>
                 </figure>
-                <figure>
-                    <img class="img_2" src="imagenes/imagen_batman.jpg" alt="imagen de batman" height="300" width="300">
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a class="img_2" href="">Learn more</a>
+                <figure class="principal__seccion2__imagenes__figura">
+                    <img class="principal__seccion2__imagenes__figura__imagen" src="./imagenes/padre_de_familia.jpg" alt="">
+                    <figcaption class="principal__seccion2__imagenes__figura__captura">
+                        <p class="principal__seccion2__imagenes__figura__captura__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="principal__seccion2__imagenes__figura__captura__enlace"href="">Learn more</a>
+                    </figcaption>
                 </figure>
-                <figure>  
-                    <img class="img_3" src="imagenes/padre_de_familia.jpg" alt="imagen de padre de familia" height="300" width="300">
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <a class="img_3" href="">Learn more</a>
-                </figure>    
+                <figure class="principal__seccion2__imagenes__figura">
+                    <img class="principal__seccion2__imagenes__figura__imagen" src="./imagenes/simpsons.jpg" alt="">
+                    <figcaption class="principal__seccion2__imagenes__figura__captura">
+                        <p class="principal__seccion2__imagenes__figura__captura__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="principal__seccion2__imagenes__figura__captura__enlace"href="">Learn more</a>
+                    </figcaption>
+                </figure>
             </section>
         </section>
     </main>
-    <footer>
-        <nav class="info_pag">
-            <h2>TRADE</h2>
-            <p>&#169; 2010 - 2020</p>
-            <p>Privacy - Terms</p>
-        </nav>
-        <nav class="links_abajo">
-            <h4>Product</h4>
-            <ul>
+    <footer class="pie">
+        <ul class="pie__lista">
+            <li class="pie__lista__titulo">TRADE</li>
+            <li class="pie__lista__elemento">© 2010-2020</li>
+            <li class="pie__lista__elemento">Privacy -Terms</li>
+        </ul>
+        <section class="pie__seccion">
+            <ul class="pie__seccion__listas">
+                <li class="pie_seccion__listas__titulo">Product</li>
                 <li><a href="">Product</a></li>
                 <li><a href="">Product</a></li>
                 <li><a href="">Product</a></li>
             </ul>
-        </nav>
-        <nav class="links_abajo_2">
-            <h4>Features</h4>
-            <ul>
+            
+            <ul class="pie__seccion__listas">
+                <li class="pie_seccion__listas__titulo">Features</li>
                 <li><a href="">Features</a></li>
                 <li><a href="">Features</a></li>
                 <li><a href="">Features</a></li>
             </ul>
-        </nav>
-        <nav class="links_abajo_3">
-            <h4>Resources</h4>
-            <ul>
+           
+            <ul class="pie__seccion__listas">
+                <li class="pie_seccion__listas__titulo">Resources</li>
                 <li><a href="">Resources</a></li>
                 <li><a href="">Resources</a></li>
                 <li><a href="">Resources</a></li>
             </ul>
-        </nav>
-        <nav class="links_abajo_4">
-            <h4>Company</h4>
-            <ul>
+            
+            <ul class="pie__seccion__listas">
+                <li class="pie_seccion__listas__titulo">Company</li>
                 <li><a href="">Company</a></li>
                 <li><a href="">Company</a></li>
                 <li><a href="">Company</a></li>
             </ul>
-        </nav>
+        </section>
     </footer>
 </body>
 </html>
