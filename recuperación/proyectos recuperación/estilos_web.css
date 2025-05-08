@@ -71,12 +71,50 @@ li{
     padding-left: 20%;
 }
 
+.main_inferior{
+    display: flex;
+    size-adjust: 100%;
+    
+}
+
 .img_1{
     align-items: left;
     margin-right: 5rem;
+    display: flex;
 }
 
 .img_2{
     align-items: center;
     margin-right: 5rem;
+    display: flex;
+}
+
+.img_3{
+    align-items: right;
+    display: flex;
+}
+
+.fig{
+    display: flex;
+}
+
+.info_pag{
+    align-items: left;
+}
+
+.links_abajo{
+    align-items: right;
+    display: flex;
+}
+
+.links_abajo_2{
+    align-items: right;
+}
+
+.links_abajo_3{
+    align-items: right;
+}
+
+.links_abajo_4{
+    align-items: right;
 }
