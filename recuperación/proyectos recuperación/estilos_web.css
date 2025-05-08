@@ -3,6 +3,9 @@
     --colorprimario: white;
     --colorsecundario: rgba(236,236,236, 0.8);
     --colorterciario: black;
+    --altura-cabecero:5%;
+    --altura-principal:100%;
+    --altura-pie-pagina:20%;
 }
 
 /*PRIMORDIAL: Reseteo de etiquetas*/
@@ -13,6 +16,11 @@
 }
 
 /* etiquetas basicas */
+body{
+    width: 100vw;
+    height: 100vw;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -28,13 +36,17 @@ footer{
 }
 
 /* Clases basicas */
+.cabecero{
+    width: 100%;
+    height: var(--altura-cabecero);
+}
+
 
 .cabecero__titulo{
     text-align: left;
     text-size-adjust: 1rem;
-    
+    margin-left: 2rem;
 }
-/*  */
 
 .cabecero__navegador{
     display: flex;
@@ -45,6 +57,7 @@ footer{
 .cabecero__navegador__lista{
     display: flex;
     list-style: none;
+    margin: 2rem;
 }
 
 .cabecero__navegador__lista__elemento{
@@ -58,14 +71,29 @@ footer{
     padding-left: 2rem;
     padding-right: 2rem;
     border-radius: 0.5rem;
+    margin-right: 2rem;
+}
+/* ------------------------------------------------------------------------------------------- */
+.principal{
+    width: 100%;
+    height: var(--altura-principal);
 }
 
+
 .principal__seccion1{
+
     background-color: rgba(240,240,240,0.5);
     text-align: center;
-    padding: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 5%;
+}
+
+.principal__seccion1__titulo{
+    margin-bottom: 2rem;
+}
+
+.principal__seccion1__texto{
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .principal__seccion1__boton{
@@ -73,6 +101,7 @@ footer{
     color: white;
     padding: 1rem;
     border-radius: 0.3rem;
+    margin-top: 2rem;
 }
 
 .principal__seccion2{
@@ -95,8 +124,14 @@ footer{
 }
 
 .principal__seccion2__imagenes__figura__imagen{
+    display: flex;
     width: 18rem;
     height: 16rem;
+}
+/* ----------------------------------------------------------------------------------------- */
+.pie{
+    width: 100%;
+    height: var(--altura-pie-pagina);
 }
 
 .pie__lista{
@@ -117,3 +152,4 @@ footer{
 .pie__seccion{
     display: flex;
 }
+
