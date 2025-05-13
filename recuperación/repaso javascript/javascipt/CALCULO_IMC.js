@@ -5,4 +5,5 @@ const altura = parseFloat(prompt("¿cuantó mide en metros? "));
 elevado = altura * altura;
 imc = peso / elevado;
 
-alert("su imc es " + imc);
+imc_sin_decimal = Math.round(imc);
+alert("su imc es " + imc_sin_decimal);
