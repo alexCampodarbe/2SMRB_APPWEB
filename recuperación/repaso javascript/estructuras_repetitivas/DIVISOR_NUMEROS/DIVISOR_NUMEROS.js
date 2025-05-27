@@ -8,7 +8,7 @@ if(n1 <= 0){
 } else{
     for(let i=1 ; i<=n1 ; i++){
         if(n1%i == 0){
-            lista_nueva_nueva_1=lista_nueva_nueva_1+i+",";
+            lista_nueva_nueva_1.push(i)
         }
     }
 }
