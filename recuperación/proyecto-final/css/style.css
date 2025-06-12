@@ -4,8 +4,8 @@
     --colorsecundario: rgba(236,236,236, 0.8);
     --colorterciario: black;
     --altura-cabecero:5%;
-    --altura-principal:100%;
-    --altura-pie-pagina:20%;
+    --altura-principal:80%;
+    --altura-pie-pagina:15%;
 }
 
 /*PRIMORDIAL: Reseteo de etiquetas*/
@@ -18,7 +18,7 @@
 /* etiquetas basicas */
 body{
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
 }
 
 header{
@@ -54,7 +54,17 @@ footer{
     align-items: center;
 }
 
-.cabecero__navegador__boton{
+.cabecero__navegador__boton_ampliar{
+    height: 2rem;
+    margin-left: 1rem;
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+}
+
+.cabecero__navegador__boton_oscuro{
     height: 2rem;
     margin-left: 1rem;
     background-color: white;
@@ -115,12 +125,31 @@ footer{
 
 .principal__seccion2__imagenes__figura__imagen{
     display: flex;
-    width: 18rem;
-    height: 16rem;
+    width: 30rem;
+    height: 20rem;
+}
+
+.principal_seccion2_imagenes_figura_boton_izquierda{
+    display: flex;
+    border: none;
+    background-color: white;
+    align-items: center;
+}
+
+.principal_seccion2_imagenes_figura_boton_derecha{
+    display: flex;
+    border: none;
+    background-color: white;
+    align-items: center;
+}
+.principal__seccion2__imagenes__figura__flecha{
+    display:flex;
+    width: 10rem;
+    height: 9rem;
 }
 /* ----------------------------------------------------------------------------------------- */
 .pie{
-    margin-top: 20%;
+    margin-top: 5%;
     width: 100%;
     height: var(--altura-pie-pagina);
 }
@@ -144,3 +173,51 @@ footer{
     display: flex;
 }
 
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.cabecero_oscuro{
+    background-color: #212f3c;
+    color: white;
+}
+
+.principal1_oscuro{
+    background-color: #17202a;
+    color: white;
+}
+
+.principal2_oscuro{
+    background-color: #212f3c;
+    color: white;
+}
+
+.pie_oscuro{
+    background-color: #17202a;
+    color: white;
+}
+
+.principal_seccion2_imagenes_figura_boton_izquierda_oscuro{
+    background-color: #212f3c;
+}
+
+.principal_seccion2_imagenes_figura_boton_derecha_oscuro{
+    background-color: #212f3c;
+    height: auto;
+}
+
+.principal__seccion1__boton_oscuro{
+    background-color: white;
+    color: black;
+}
+
+.cabecero__navegador__boton_ampliar_oscuro{
+    background-color: #212f3c;
+    color: white;
+}
+
+.cabecero__navegador__boton_oscuro_oscuro{
+    background-color: #212f3c;
+    color: white;
+}
+
+.pie_seccion__listas__titulo_oscuro{
+    color: white;
+}
