@@ -19,6 +19,11 @@
 body{
     width: 100vw;
     height: 120vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
 }
 
 header{
@@ -32,13 +37,15 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(240,240,240,0.5);
+    background-color: rgba(218, 218, 218);
 }
 
 /* Clases basicas */
 .cabecero{
-    width: 100%;
+    width: 50vw;
     height: var(--altura-cabecero);
+    display: flex;
+    background-color: white;
 }
 
 
@@ -75,14 +82,15 @@ footer{
 }
 /* ------------------------------------------------------------------------------------------- */
 .principal{
-    width: 100%;
+    width: 50%;
     height: var(--altura-principal);
+    background-color: white;
 }
 
 
 .principal__seccion1{
 
-    background-color: rgba(240,240,240,0.5);
+    background-color: rgba(218, 218, 218);
     text-align: center;
     padding: 5%;
 }
@@ -125,8 +133,8 @@ footer{
 
 .principal__seccion2__imagenes__figura__imagen{
     display: flex;
-    width: 30rem;
-    height: 20rem;
+    width: 30vw;
+    height: 40vh;
 }
 
 .principal_seccion2_imagenes_figura_boton_izquierda{
@@ -144,14 +152,17 @@ footer{
 }
 .principal__seccion2__imagenes__figura__flecha{
     display:flex;
-    width: 10rem;
-    height: 9rem;
+    width: 5vw;
+    height: 4vh;
 }
 /* ----------------------------------------------------------------------------------------- */
 .pie{
-    margin-top: 5%;
-    width: 100%;
+    display: flex;
+    width: 50vw;
     height: var(--altura-pie-pagina);
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .pie__lista{
@@ -166,7 +177,10 @@ footer{
     list-style: none;
     text-decoration: none;
     color: black;
-    margin: 3rem;
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    flex-direction: column;
 }
 
 .pie__seccion{
@@ -220,4 +234,26 @@ footer{
 
 .pie_seccion__listas__titulo_oscuro{
     color: white;
+}
+
+.cuerpo_oscuro{
+    background-color: white;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.cabecero_ampliar{
+    width: 100%;
+}
+
+.principal_ampliar{
+    width: 100%;
+}
+
+.pie_ampliar{
+    width: 100%;
+}
+
+.cuerpo_ampliar{
+    height: 150%;
 }

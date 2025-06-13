@@ -9,6 +9,10 @@ const flecha_derecha = document.querySelector(".principal_seccion2_imagenes_figu
 const flecha_izquierda = document.querySelector(".principal_seccion2_imagenes_figura_boton_izquierda");
 const boton_principal = document.querySelector(".principal__seccion1__boton");
 const titulo_pie_lista = document.querySelectorAll(".pie_seccion__listas__titulo")
+const cuerpo = document.querySelector(".cuerpo");
+const principal = document.querySelector(".principal");
+
+
 
 boton_oscuro.addEventListener("click", function(){
     cabecero.classList.toggle("cabecero_oscuro");
@@ -20,8 +24,16 @@ boton_oscuro.addEventListener("click", function(){
     flecha_derecha.classList.toggle("principal_seccion2_imagenes_figura_boton_derecha_oscuro");
     flecha_izquierda.classList.toggle("principal_seccion2_imagenes_figura_boton_izquierda_oscuro");
     boton_principal.classList.toggle("principal__seccion1__boton_oscuro");
+    cuerpo.classList.toggle("cuerpo_oscuro");
     titulo_pie_lista.forEach(objeto =>{
         objeto.classList.toggle("pie_seccion__listas__titulo_oscuro");
     })
 })
-    
+
+
+boton_ampliar.addEventListener("click", function(){
+    cabecero.classList.toggle("cabecero_ampliar");
+    principal.classList.toggle("principal_ampliar");
+    pie.classList.toggle("pie_ampliar")
+    cuerpo.classList.toggle("cuerpo_ampliar")
+})
