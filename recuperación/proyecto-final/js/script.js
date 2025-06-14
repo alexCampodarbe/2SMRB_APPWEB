@@ -54,7 +54,7 @@ boton_ampliar.addEventListener("click", function(){
     }
 })
 
-let siguiente=0
+let siguiente=1
 boton_siguiente.addEventListener("click",function(){
     rutas_imagenes.forEach((elemento,lista) => {
         if(lista == siguiente){
@@ -67,7 +67,7 @@ boton_siguiente.addEventListener("click",function(){
     }
 })
 
-let atras = 0;
+let atras = -1;
 
 boton_atras.addEventListener("click", function(){
     atras--;
