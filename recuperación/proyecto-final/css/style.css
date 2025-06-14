@@ -161,8 +161,6 @@ footer{
     width: 50vw;
     height: var(--altura-pie-pagina);
     justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 .pie__lista{
@@ -185,6 +183,7 @@ footer{
 
 .pie__seccion{
     display: flex;
+    flex-wrap: wrap;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
